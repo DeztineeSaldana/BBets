@@ -57,6 +57,16 @@ print(SBrLwarray[975])
 
 My method for coming up with away to get the 95% confidence interval was by doing the function above. Once you do 975-25, you get 950 which is needed for the 95% confidence interval. 
 
+```{r}
+hist(BrLwarray)
+```
+Histogram for BrLarray. It seems pretty symmetrical to me. Slightly left skewed. 
+
+```{r}
+favstats(BrLwarray)
+```
+Favstats for Brlwarray. The standard deviation is shown as 29.30652. The mean is 282.289. 
+
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
 
