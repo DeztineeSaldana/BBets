@@ -42,6 +42,43 @@ The function will be given a class_size by number of students, odds, and Number_
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
+```{r}
+BrLw(35,2.0,637)
+```
+This is way too much and it is in favor of brownlow. 
+
+```{r}
+BrLw(35,3.0,637)
+```
+This is still a lot and it is in favor of brownlow.
+```{r}
+BrLw(35,4.0,637)
+```
+This is pretty solid of a choice. 
+```{r}
+BrLw(35,4.35,637)
+```
+This is the best choice. 
+```{r}
+BrLw(35,4.5,637)
+```
+Brownlow is losing too much with this. 
+
+Now we can confirm that the best option is the option with 4.35
+
+```{r}
+BrLwarray=numeric()
+for(j in 1:1000){
+  
+ 
+BrLwarray[j] = BrLw(35,4.35,637)}
+```
+
+```{r}
+hist(BrLwarray)
+```
+
+This shows that Brownlow would've needed to bet between 4 and 5 in order to have fair odds. and you can tell this because it gets closer to 0 in the middle. 
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
