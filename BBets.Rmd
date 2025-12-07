@@ -50,16 +50,41 @@ The function will be given a class_size by number of students, odds, and Number_
 
 
 
-
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+BrLw(34,2,637)
+```
 
+He is winning way too much 
 
+```{r}
+BrLw(31,2,637)
+```
 
+He is still winning a lot 
 
+```{r}
+best = BrLw(29,2,637)
+```
 
+(I was given 76 for 29)
+
+He still is winning significantly but not that much
+
+```{r}
+BrLw(28,2,637)
+```
+
+He is losing. 
+
+The best class size is supposed to between 28 and 29, but since they can't have half a student, the best choice would be to go with 29, despite Brownlow mostly winning.
+
+```{r}
+hist(best)
+```
 
 
 # Discussion and Conclusion
