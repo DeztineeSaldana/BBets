@@ -93,7 +93,43 @@ This shows that Brownlow would've needed to bet between 4 and 5 in order to have
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
 
+```{r}
+BrLw(34,2,637)
+```
 
+He is winning way too much 
+
+```{r}
+BrLw(31,2,637)
+```
+
+He is still winning a lot 
+
+```{r}
+BrLw(29,2,637)
+```
+
+He still is winning significantly but not that much. This is the best option
+
+```{r}
+BrLw(28,2,637)
+```
+
+He is losing. 
+
+The best class size is supposed to between 28 and 29, but since they can't have half a student, the best choice would be to go with 29, despite Brownlow mostly winning.
+
+```{r}
+BrLwarray=numeric()
+for(j in 1:1000){
+  
+ 
+BrLwarray[j] = BrLw(29,2,637)}
+```
+
+```{r}
+hist(BrLwarray)
+```
 
 
 
